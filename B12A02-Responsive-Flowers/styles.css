@@ -12,11 +12,13 @@
     "wdth" 100;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+
+
+   #shoping-cart {
+  width: 100%;
+  height: auto;
 }
+
 
 
 /* sheard style */
@@ -26,19 +28,20 @@ html, body {
 }
 
 .dark-1{
-    color: rgba(0, 0, 0, 1);
+    color: rgb(0, 0, 0);
+    font-weight: 600px;
 }
 .dark-2{
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 22px;
+  color: rgba(10, 9, 9, 0.5);
+  font-size: 20px;
 }
 
 .header-title{
     font-weight: 800;
-    font-size: 65px;
+    font-size: 60px;
 }
 .header-sub-title{
-    font-size: 22px;
+    font-size: 20px;
     font: weight 500;
 }
 
@@ -54,15 +57,14 @@ html, body {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 16px 40px;
     background-color: rgba(242, 237, 232, 0.942);
     padding: 100px;
-    padding-top: 20px;
+    padding-top: 30px;
 
   }
 
   .logo img {
-    height: 50px; 
+    height: 60px; 
   }
 
   ul {
@@ -73,22 +75,23 @@ html, body {
 
   li a {
     text-decoration: none;
-    font-size: 16px;
-    color: #333;
+    font-size: 20px;
+    color: #212020;
     font-weight: 500;
   } 
   .container{
     display: flex;
-    padding-bottom: 0;
     background-color: #ffffff;
-    margin: 0;
+    margin:0px;
+    padding: 100px;
 
   }
 
  .text-box{
-
+  
     text-align:left;
   padding-top: 100px;
+  padding-bottom: 0;
     
  }
 
@@ -96,7 +99,7 @@ html, body {
 
  .plant-header{
   text-align: center;
-  margin-top: 150px;
+  margin-top: 20px;
   padding-left: 150px;
   padding-right: 150px;
   font-size: 1.5rem;
@@ -152,39 +155,26 @@ html, body {
 }
 
 /* plant lover */
-.plants-lover-content{
-  display: flex;
-  justify-content: space-between;
-  padding:  100px;
-  height: 500;
-  gap: auto;
 
-}
 
 .plants-lover-section {
-  padding: 40px 40px;
+  padding: 60px 60px;
   background-color: hsl(0, 0%, 96%);
-}
-
-.container {
-  max-width: 1140px;
-  margin: auto;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
  
 }
 
-.plants-lover-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 100px;
-  margin: 20px;
-}
+
 
 .plant-image img {
   max-width: 100%;
   height: 500px;
   width: 440px;
-  border-radius: 12px;
+  border-radius: 2px;
+  margin-left: 150px;
 }
 
 .plant-text {
@@ -213,7 +203,16 @@ html, body {
   font-size: 18px;
 }
 
+/* deals section */
+.lests-deal{
+  text-align: center;
+  padding: 50px;
+  
+  .deal-title{
+    font-size: 40px;
+  }
 
+}
 .container-offer {
   display: grid;
   grid-template-columns: 35% 65%;
@@ -221,11 +220,12 @@ html, body {
   grid-template-areas: 
     "offer1 offer3"
     "offer2 offer3";
-  gap: 20px;
+  gap: 10px;
   height: 360px;
   width: 1140px;
   padding: 5px;
   margin: 0 auto; 
+  padding-bottom: 25px;
 }
 
 /* Grid area assignment */
@@ -318,8 +318,7 @@ html, body {
   text-align: center;
   position: relative;
   color: white;
-  width: 96vw;                                    
-                    
+  width: 100vw;                                                    
   box-sizing: border-box;
   margin-right: 20px;
 }
