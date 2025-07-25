@@ -19,7 +19,10 @@
   height: auto;
 }
 
+#bold{
+  font-weight: 700;
 
+}
 
 /* sheard style */
 .text-light{
@@ -173,7 +176,7 @@
   max-width: 100%;
   height: 500px;
   width: 440px;
-  border-radius: 2px;
+  border-radius: 12px;
   margin-left: 150px;
 }
 
@@ -231,19 +234,19 @@
 /* Grid area assignment */
 .offer1 {
   grid-area: offer1;
-  background-image: url('./assets/deal-bloom.png');
+  background-image: url('/deal-bloom.png');
  
   
 }
 
 .offer2 {
   grid-area: offer2;
-  background-image: url('./assets/deal-ana.png');
+  background-image: url('/deal-ana.png');
 }
 
 .offer3 {
   grid-area: offer3;
-  background-image: url('./assets/deal-zabo.png');
+  background-image: url('/deal-zabo.png');
  
  }
   
@@ -310,7 +313,7 @@
 /* join section */
 
 .join-section {
-  background-image: url('./assets/sample-flower-image.png');
+  background-image: url('/news-letter-bg.png');
   background-size: cover;         
   background-position: center;     
   background-repeat: no-repeat;  
@@ -429,13 +432,52 @@
 }
   /* Responsive: hide menu on small screen */
   
+  .item .image .img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .item{
+    width: 100;
+    box-sizing: border-box;
+  }
+  .text{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 10px;
+
+  }
 
 
-@media (max-width: 768px) {
-  .navbar {
+@media screen and (max-width: 768px) {
+  .navbar ul .dark-1{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-sub-title {
+    font-size: 1rem;
+  }
+
+  .image-box {
+    text-align: center;
   }
 
   .nav-links {
@@ -448,13 +490,12 @@
 
   .plant-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr ;
     gap: 15px;
   }
 
-  .plants-lover-content {
-    flex-direction: column;
-    text-align: center;
+  .plants-lover-section {
+    display: none;
   }
 
   .plant-image img {
@@ -462,6 +503,9 @@
     height: auto;
   }
 
+  .offer3{
+    display: none;
+  }
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -469,7 +513,7 @@
   }
 
   .footer-menu ul {
-    columns: 2;
+    columns: 1;
     padding: 0;
   }
 
@@ -488,5 +532,24 @@
     width: 100%;
     height: auto;
   }
-} 
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-menu li {
+    margin: 5px 0;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
 
