@@ -234,19 +234,19 @@
 /* Grid area assignment */
 .offer1 {
   grid-area: offer1;
-  background-image: url('/deal-bloom.png');
+  background-image: url('assets/deal-bloom.png');
  
   
 }
 
 .offer2 {
   grid-area: offer2;
-  background-image: url('/deal-ana.png');
+  background-image: url('assets/deal-ana.png');
 }
 
 .offer3 {
   grid-area: offer3;
-  background-image: url('/deal-zabo.png');
+  background-image: url('assets/deal-zabo.png');
  
  }
   
@@ -313,7 +313,7 @@
 /* join section */
 
 .join-section {
-  background-image: url('/news-letter-bg.png');
+  background-image: url('assets/news-letter-bg.png');
   background-size: cover;         
   background-position: center;     
   background-repeat: no-repeat;  
